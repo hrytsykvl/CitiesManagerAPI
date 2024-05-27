@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CitiesManager.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCities">
+            <summary>
+            Get list of citites (including city ID and city name) from 'cities' table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.GetCity(System.Guid)">
+            <summary>
+            Get city details by city id from 'cities' table
+            </summary>
+            <param name="id">City id to get</param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.PutCity(System.Guid,CitiesManager.WebAPI.Models.City)">
+            <summary>
+            Update city name by city id in 'cities' table
+            </summary>
+            <param name="cityID">City id to update</param>
+            <param name="city">City name to update</param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.PostCity(CitiesManager.WebAPI.Models.City)">
+            <summary>
+            Create and add new city into 'cities' table
+            </summary>
+            <param name="city">Created city object</param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v1.CitiesController.DeleteCity(System.Guid)">
+            <summary>
+            Delete city by city id from 'cities' table
+            </summary>
+            <param name="id">City id to delete</param>
+            <returns></returns>
+        </member>
+        <member name="M:CitiesManager.WebAPI.Controllers.v2.CitiesController.GetCities">
+            <summary>
+            Get list of citites (including city ID and city name) from 'cities' table
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CitiesManager.WebAPI.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.WebAPI.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.WebAPI.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.WebAPI.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:CitiesManager.WebAPI.Migrations.CityNameRequired">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.WebAPI.Migrations.CityNameRequired.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.WebAPI.Migrations.CityNameRequired.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:CitiesManager.WebAPI.Migrations.CityNameRequired.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
