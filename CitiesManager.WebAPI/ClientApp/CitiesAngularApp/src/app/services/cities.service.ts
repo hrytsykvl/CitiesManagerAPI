@@ -26,4 +26,11 @@ export class CitiesService {
 
     return this.httpClient.post<City>(`${API_BASE_URL}v1/cities`, city, { headers: headers });
   }
+
+  public putCity(city: City): Observable<string> {
+    let headers = new HttpHeaders();
+    headers = headers.append("Authorization", "Bearer mytoken");
+
+    return this.httpClient.put<string>(`${API_BASE_URL}v1/cities/${city.cityID}`, city, { headers: headers });
+  }
 }
